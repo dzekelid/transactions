@@ -33,7 +33,7 @@ apis:
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoin-transactions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sources-source-source-transactions-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
