@@ -28,7 +28,7 @@ apis:
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/rawtx-tx-hash-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/unconfirmed-transactions-get.md
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/blockchain-info
