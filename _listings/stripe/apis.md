@@ -20,8 +20,8 @@ tags:
 - Change Log
 - Billing
 - API LIfeycle
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sources-source-source-transactions-source-transaction-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoin-receivers-receiver-transactions-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
