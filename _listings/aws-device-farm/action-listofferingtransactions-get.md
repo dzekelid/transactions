@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Device Farm API
+  title: AWS Device Farm API List Offering Transactions
   version: 1.0.0
+  description: |-
+    Returns a list of all historical purchases, renewals, and system renewal transactions for an
+          AWS account.
 schemes:
 - http
 produces:
