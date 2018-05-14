@@ -23,17 +23,17 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/apis.md
 specificationVersion: "0.14"
 apis:
-- name: VersaPay View a Transaction
-  description: View a transaction.
+- name: VersaPay Approve a Transaction
+  description: |-
+    Approve a `new` or `wait_for_request_approval` transaction.<br>
+    An API key with administrative access is required to approve a transaction.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1208-versapay-corporation.jpg
   humanURL: http://developers.versapay.com/index.html
   baseURL: https://secure.versapay.com//
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-approve-post.md
 x-common:
 - type: x-base
   url: https://secure.versapay.com/api/
