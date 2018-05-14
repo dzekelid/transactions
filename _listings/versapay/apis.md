@@ -23,9 +23,9 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/apis.md
 specificationVersion: "0.14"
 apis:
-- name: VersaPay Approve a Transaction
+- name: VersaPay Cancel a Transaction
   description: |-
-    Approve a `new` or `wait_for_request_approval` transaction.<br>
+    Cancel a `new`, `wait_for_request_approval` or `wait_for_bank_account_verification` transaction you created. Transactions cannot be cancelled after they have been sent to the bank and are `in_progress`.<br>
     An API key with administrative access is required to approve a transaction.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1208-versapay-corporation.jpg
   humanURL: http://developers.versapay.com/index.html
@@ -33,7 +33,9 @@ apis:
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-approve-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-cancel-post.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/versapay/api-transactions-token-cancel-post-postman.md
 x-common:
 - type: x-base
   url: https://secure.versapay.com/api/
