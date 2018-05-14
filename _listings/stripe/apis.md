@@ -34,17 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sources-source-source-transactions-source-transaction-get.md
-- name: Stripe Get Bitcoin Transactions
-  description: Get Bitcoin, Transactions
+- name: Stripe Get Sources Source Source Transactions
+  description: Get Sources, Source, Source, Transactions
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoin-transactions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sources-source-source-transactions-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoin-transactions-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sources-source-source-transactions-get-postman.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
