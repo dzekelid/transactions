@@ -21,17 +21,22 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Square Connect API Get V2 Locations Location Transactions Transaction
-  description: Get v2 locations location transactions transaction.
+- name: Square Connect API Post V2 Locations Location Transactions Transaction Capture
+  description: |-
+    Captures a transaction that was created with the [Charge](#endpoint-charge)
+    endpoint with a `delay_capture` value of `true`.
+
+    See [Delayed capture transactions](/articles/delayed-capture-transactions/)
+    for more information.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/square-logo.png
   humanURL: https://squareup.com
   baseURL: https://connect.squareup.com/v1/
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-capture-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-capture-post-postman.md
 x-common:
 - type: x-base
   url: https://connect.squareup.com
