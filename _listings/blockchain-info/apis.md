@@ -29,15 +29,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/unconfirmed-transactions-get.md
-- name: Blockchain Info Raw Transaction
-  description: Returns a raw trasaction.
+- name: Blockchain Info Unconfirmed Transactions
+  description: Returns unconfirmed transactions.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28138-blockchain-info.jpg
   humanURL: https://blockchain.info
   baseURL: https://blockchain.info//
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/rawtx-tx-hash-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/unconfirmed-transactions-get.md
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/blockchain-info
