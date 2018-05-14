@@ -21,35 +21,17 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Square Connect API Post V2 Locations Location Transactions
-  description: |-
-    Charges a card represented by a card nonce or a customer's card on file.
-
-    Your request to this endpoint must include _either_:
-
-    - A value for the `card_nonce` parameter (to charge a card nonce generated
-    with the `SqPaymentForm`)
-    - Values for the `customer_card_id` and `customer_id` parameters (to charge
-    a customer's card on file)
-
-    In order for an eCommerce payment to potentially qualify for
-    [Square chargeback protection](https://squareup.com/help/article/5394), you
-    _must_ provide values for the following parameters in your request:
-
-    - `buyer_email_address`
-    - At least one of `billing_address` or `shipping_address`
-
-    When this response is returned, the amount of Square's processing fee might not yet be
-    calculated. To obtain the processing fee, wait about ten seconds and call
-    [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money`
-    field of each [Tender included](#type-tender) in the transaction.
+- name: Square Connect API Get V2 Locations Location Transactions Transaction
+  description: Get v2 locations location transactions transaction.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/square-logo.png
   humanURL: https://squareup.com
   baseURL: https://connect.squareup.com/v1/
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/square/v2-locations-location-id-transactions-transaction-id-get-postman.md
 x-common:
 - type: x-base
   url: https://connect.squareup.com
