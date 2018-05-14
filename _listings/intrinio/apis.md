@@ -31,17 +31,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/intrinio/owners-insider-transactions-get.md
-- name: Intrinio API Insider Transactions by Company
-  description: Returns a list of all insider transactions in a company.  Criteria
-    for being an insider include being a director, officer, or 10%+ owner in the company.  Transactions
-    are detailed for both non-derivative and derivative transactions by the insider.
+- name: Intrinio API Insider Transactions By Owner
+  description: Returns a list of all insider transactions by an owner in as many companies
+    as the owner may be considered an insider.  Criteria for being an insider include
+    being a director, officer, or 10%+ owner in the company.  Transactions are detailed
+    for both non-derivative and derivative transactions by the insider.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IntrinioLogo-Green-optimized.png
   humanURL: https://intrinio.com
   baseURL: https://api.intrinio.com//
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/intrinio/companies-insider-transactions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/intrinio/owners-insider-transactions-get.md
 x-common:
 - type: x-applications-showcase
   url: https://intrinio.com/marketplace/apps
