@@ -1,9 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Blockchain Info
-  description: Use Blockchain's APIs at no cost to help you start building bitcoin
-    apps.
+  title: Blockchain Info Unconfirmed Transactions
+  description: Returns unconfirmed transactions.
   version: 1.0.0
 host: blockchain.info
 schemes:
