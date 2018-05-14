@@ -29,7 +29,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/unconfirmed-transactions-get.md
+- name: Blockchain Info Raw Transaction
+  description: Returns a raw trasaction.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28138-blockchain-info.jpg
+  humanURL: https://blockchain.info
+  baseURL: https://blockchain.info//
+  tags: Transactions
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/blockchain-info/rawtx-tx-hash-get.md
 x-common:
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/blockchain-info
+- type: x-documentation
+  url: https://blockchain.info/api
+- type: x-twitter
+  url: https://twitter.com/blockchain
+- type: x-website
+  url: https://blockchain.info
+- type: x-websockets
+  url: https://blockchain.info/api/api_websocket
 - type: x-crunchbase
   url: https://crunchbase.com/organization/blockchain-info
 - type: x-documentation
