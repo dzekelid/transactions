@@ -43,15 +43,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/etsy/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Etsy Get Shops Shop Transactions
-  description: Retrieves a set of Transaction objects associated to a Shop.
+- name: Etsy Get Transactions Transaction
+  description: Retrieves a Transaction by id.
   image: http://pbs.twimg.com/profile_images/613742962095341568/VGmQvBw8_normal.png
   humanURL: http://www.etsy.com/
   baseURL: https://openapi.etsy.com//v2/private
   tags: Transactions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/etsy/shops-shop-id-transactions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/etsy/transactions-transaction-id-get.md
 x-common:
 - type: x-apijson--authoritative
   url: http://apis.io/apisdef/etsy.json
