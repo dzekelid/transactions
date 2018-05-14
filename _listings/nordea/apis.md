@@ -26,7 +26,38 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/nordea/accounts-accountid-transactions-get.md
+- name: Nordea Get account transactions
+  description: Get accounts account transactions
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nordea-bank-logo.png
+  humanURL: https://nordeaopenbanking.com
+  baseURL: https://api.nordeaopenbanking.com/v2/
+  tags: Transactions
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/nordea/accounts-accountid-transactions-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/nordea/accounts-accountid-transactions-get-postman.md
 x-common:
+- type: x-blog
+  url: https://medium.com/@NordeaOpenBanking
+- type: x-blog-rss
+  url: https://medium.com/feed/@NordeaOpenBanking
+- type: x-developer
+  url: https://developer.nordeaopenbanking.com/
+- type: x-documentation
+  url: https://developer.nordeaopenbanking.com/app/docs
+- type: x-email
+  url: openbankingsupport@nordea.com
+- type: x-github
+  url: https://github.com/NordeaOSS
+- type: x-privacy-policy
+  url: https://developer.nordeaopenbanking.com/app/page/privacy
+- type: x-terms-of-service
+  url: https://developer.nordeaopenbanking.com/app/page/terms
+- type: x-twitter
+  url: https://twitter.com/NordeaAPI
+- type: x-website
+  url: https://nordeaopenbanking.com
 - type: x-blog
   url: https://medium.com/@NordeaOpenBanking
 - type: x-blog-rss
