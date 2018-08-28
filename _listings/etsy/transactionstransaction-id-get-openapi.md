@@ -74,6 +74,27 @@ paths:
       tags:
       - Transactions
       - Transaction
+  /users/{user_id}/transactions:
+    get:
+      summary: Get Users User Transactions
+      description: Retrieves a set of Transaction objects associated to a User.
+      operationId: getUsersUserTransactions
+      x-api-path-slug: usersuser-idtransactions-get
+      parameters:
+      - in: query
+        name: limit
+        description: Bring Etsys handmade marketplace and community into your apps
+      - in: query
+        name: offset
+        description: Bring Etsys handmade marketplace and community into your apps
+      - in: path
+        name: user_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+      - Transactions
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

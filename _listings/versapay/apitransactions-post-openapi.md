@@ -19,6 +19,62 @@ produces:
 consumes:
 - application/json
 paths:
+  /api/transactions/{token}:
+    get:
+      summary: View a Transaction
+      description: View a transaction.
+      operationId: viewTransaction
+      x-api-path-slug: apitransactionstoken-get
+      parameters:
+      - in: path
+        name: token
+        description: The transaction identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - View
+      - Transactions
+  /api/transactions/{token}/approve:
+    post:
+      summary: Approve a Transaction
+      description: |-
+        Approve a `new` or `wait_for_request_approval` transaction.<br>
+        An API key with administrative access is required to approve a transaction.
+      operationId: approveTransaction
+      x-api-path-slug: apitransactionstokenapprove-post
+      parameters:
+      - in: body
+        name: fund_token
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: token
+        description: The transaction identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Approve
+      - Transactions
+  /api/transactions/{token}/cancel:
+    post:
+      summary: Cancel a Transaction
+      description: |-
+        Cancel a `new`, `wait_for_request_approval` or `wait_for_bank_account_verification` transaction you created. Transactions cannot be cancelled after they have been sent to the bank and are `in_progress`.<br>
+        An API key with administrative access is required to approve a transaction.
+      operationId: cancelTransaction
+      x-api-path-slug: apitransactionstokencancel-post
+      parameters:
+      - in: path
+        name: token
+        description: The transaction identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Cancel
+      - Transactions
   /api/transactions:
     get:
       summary: View Transactions

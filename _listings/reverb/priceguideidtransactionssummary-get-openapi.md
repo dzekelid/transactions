@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Get Pricegue Transactions Summary
+  title: Reverb Get Pricegue Transactions Summary
   description: Get a summary of transactions for a given price guide
   termsOfService: https://reverb.com/page/terms
   contact:

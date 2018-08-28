@@ -81,6 +81,153 @@ paths:
       tags:
       - Browse
       - Transactions
+    post:
+      summary: Store Transaction
+      description: Store transaction.
+      operationId: createTransaction
+      x-api-path-slug: apiv1transactions-post
+      parameters:
+      - in: body
+        name: input
+        description: Input
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Store
+      - Transaction
+  /api/v1/stats/transactions:
+    get:
+      summary: Transaction Stats
+      description: Transaction stats.
+      operationId: getTransactionsStats
+      x-api-path-slug: apiv1statstransactions-get
+      parameters:
+      - in: query
+        name: date_from
+        description: Date from in yyyy-MM format
+      - in: query
+        name: date_to
+        description: Date to in yyyy-MM format
+      - in: query
+        name: interval
+        description: Interval
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transaction
+      - Stats
+  /api/v1/transactions/{key}:
+    delete:
+      summary: Delete Transaction
+      description: Delete transaction.
+      operationId: cancelTransaction
+      x-api-path-slug: apiv1transactionskey-delete
+      parameters:
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transaction
+    get:
+      summary: Retrieve Transaction Data.
+      description: Retrieve transaction data..
+      operationId: getTransaction
+      x-api-path-slug: apiv1transactionskey-get
+      parameters:
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Retrieve
+      - Transaction
+      - Data
+    put:
+      summary: Update Transaction
+      description: Update transaction.
+      operationId: updateTransaction
+      x-api-path-slug: apiv1transactionskey-put
+      parameters:
+      - in: body
+        name: input
+        description: Input
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transaction
+  /api/v1/transactions/{key}/confirm:
+    post:
+      summary: Confirm Transaction
+      description: Confirm transaction.
+      operationId: confirmTransaction
+      x-api-path-slug: apiv1transactionskeyconfirm-post
+      parameters:
+      - in: body
+        name: input
+        description: Input
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Confirm
+      - Transaction
+  /api/v1/transactions/{key}/refunds:
+    get:
+      summary: Get Transaction Refunds
+      description: Get transaction refunds.
+      operationId: listRefunds
+      x-api-path-slug: apiv1transactionskeyrefunds-get
+      parameters:
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transaction
+      - Refunds
+  /api/v1/transactions/{key}/unconfirm:
+    post:
+      summary: Un-confirm The Transaction
+      description: Un-confirm the transaction.
+      operationId: unconfirmTransaction
+      x-api-path-slug: apiv1transactionskeyunconfirm-post
+      parameters:
+      - in: body
+        name: input
+        description: Input
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: key
+        description: Transaction key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Un-confirm
+      - Transaction
 x-streamrank:
   polling_total_time_average: "0"
   polling_size_download_average: "0"

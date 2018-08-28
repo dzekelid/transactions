@@ -44,6 +44,8 @@ paths:
         200:
           description: OK
       tags:
+      - Banks
+      - Banking
       - Cib
       - Service
       - S2b

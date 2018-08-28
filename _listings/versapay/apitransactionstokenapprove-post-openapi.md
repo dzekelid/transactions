@@ -21,40 +21,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /api/transactions:
-    get:
-      summary: View Transactions
-      description: View transactions.
-      operationId: viewAllTransactions
-      x-api-path-slug: apitransactions-get
-      parameters:
-      - in: query
-        name: page
-        description: 50 items are displayed per page
-      responses:
-        200:
-          description: OK
-      tags:
-      - View
-      - ""
-      - Transactionss
-    post:
-      summary: Create Transactions
-      description: Create transactions.
-      operationId: createTransaction
-      x-api-path-slug: apitransactions-post
-      parameters:
-      - in: body
-        name: body
-        description: Transaction to create
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      - Transactionss
   /api/transactions/{token}:
     get:
       summary: View a Transaction
@@ -93,6 +59,58 @@ paths:
       tags:
       - Approve
       - Transactions
+  /api/transactions/{token}/cancel:
+    post:
+      summary: Cancel a Transaction
+      description: |-
+        Cancel a `new`, `wait_for_request_approval` or `wait_for_bank_account_verification` transaction you created. Transactions cannot be cancelled after they have been sent to the bank and are `in_progress`.<br>
+        An API key with administrative access is required to approve a transaction.
+      operationId: cancelTransaction
+      x-api-path-slug: apitransactionstokencancel-post
+      parameters:
+      - in: path
+        name: token
+        description: The transaction identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Cancel
+      - Transactions
+  /api/transactions:
+    get:
+      summary: View Transactions
+      description: View transactions.
+      operationId: viewAllTransactions
+      x-api-path-slug: apitransactions-get
+      parameters:
+      - in: query
+        name: page
+        description: 50 items are displayed per page
+      responses:
+        200:
+          description: OK
+      tags:
+      - View
+      - ""
+      - Transactionss
+    post:
+      summary: Create Transactions
+      description: Create transactions.
+      operationId: createTransaction
+      x-api-path-slug: apitransactions-post
+      parameters:
+      - in: body
+        name: body
+        description: Transaction to create
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      - Transactionss
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -9,72 +9,106 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe
 x-kinRank: "10"
 x-alexaRank: "1914"
 tags: Transactions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stripe Get Bitcoin Receivers Receiver Transactions
-  x-api-slug: stripe
+- name: Stripe - Get Bitcoin Receivers Receiver Transactions
+  x-api-slug: bitcoinreceiversreceivertransactions-get
   description: Get Bitcoin, Receivers, Receiver, Transactions
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///bitcoin/receivers/{receiver}/transactions
-  tags: Bitcoin, Receivers, Receiver, Transactions
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoinreceiversreceivertransactions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcoinreceiversreceivertransactions-get-openapi.md
-- name: Stripe Get Bitcoin Transactions
-  x-api-slug: stripe
+- name: Stripe - Get Bitcoin Transactions
+  x-api-slug: bitcointransactions-get
   description: Get Bitcoin, Transactions
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///bitcoin/transactions
-  tags: Bitcoin, Transactions
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcointransactions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/bitcointransactions-get-openapi.md
-- name: Stripe Get Sources Source Source Transactions
-  x-api-slug: stripe
+- name: Stripe - Get Sources Source Source Transactions
+  x-api-slug: sourcessourcesource-transactions-get
   description: Get Sources, Source, Source, Transactions
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///sources/{source}/source_transactions
-  tags: Sources, Source, Source, Transactions
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactions-get-openapi.md
-- name: Stripe Get Sources Source Source Transactions Source Transaction
-  x-api-slug: stripe
+- name: Stripe - Get Sources Source Source Transactions Source Transaction
+  x-api-slug: sourcessourcesource-transactionssource-transaction-get
   description: Retrieve an existing source transaction object. Supply the unique source
     ID from a source creation request and the source transaction ID and Stripe will
     return the corresponding up-to-date source object information.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///sources/{source}/source_transactions/{source_transaction}
-  tags: Sources, Source, Source, Transactions, Source, Transaction
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-openapi.md
-- name: Stripe
-  x-api-slug: stripe
-  description: Web and mobile payments, built for developers.
+- name: Stripe - Get Sources Source Source Transactions Source Transaction
+  x-api-slug: sourcessourcesource-transactionssource-transaction-get
+  description: Retrieve an existing source transaction object. Supply the unique source
+    ID from a source creation request and the source transaction ID and Stripe will
+    return the corresponding up-to-date source object information.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
-  tags: Transactions
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-openapi.md
+- name: Stripe - Get Sources Source Source Transactions Source Transaction
+  x-api-slug: sourcessourcesource-transactionssource-transaction-get
+  description: Retrieve an existing source transaction object. Supply the unique source
+    ID from a source creation request and the source transaction ID and Stripe will
+    return the corresponding up-to-date source object information.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transactions/master/_listings/stripe/sourcessourcesource-transactionssource-transaction-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://stride.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://stripe.stack.network
 - type: x-base
   url: https://api.stripe.com/
 - type: x-blog

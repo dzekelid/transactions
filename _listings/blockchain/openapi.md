@@ -1,10 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: Blockchain
 x-complete: 1
 info:
-  title: Blockchain Info
-  description: use-blockchains-apis-at-no-cost-to-help-you-start-building-bitcoin-apps-
+  title: Blockchain
   version: 1.0.0
 host: blockchain.info
 schemes:
@@ -44,4 +42,3 @@ paths:
       tags:
       - Blockchain
       - Transactions
----

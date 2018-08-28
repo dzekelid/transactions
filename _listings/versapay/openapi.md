@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: VersaPay
 x-complete: 1
@@ -19,40 +18,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /api/transactions:
-    get:
-      summary: View Transactions
-      description: View transactions.
-      operationId: viewAllTransactions
-      x-api-path-slug: apitransactions-get
-      parameters:
-      - in: query
-        name: page
-        description: 50 items are displayed per page
-      responses:
-        200:
-          description: OK
-      tags:
-      - View
-      - ""
-      - Transactionss
-    post:
-      summary: Create Transactions
-      description: Create transactions.
-      operationId: createTransaction
-      x-api-path-slug: apitransactions-post
-      parameters:
-      - in: body
-        name: body
-        description: Transaction to create
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      - Transactionss
   /api/transactions/{token}:
     get:
       summary: View a Transaction
@@ -109,4 +74,37 @@ paths:
       tags:
       - Cancel
       - Transactions
----
+  /api/transactions:
+    get:
+      summary: View Transactions
+      description: View transactions.
+      operationId: viewAllTransactions
+      x-api-path-slug: apitransactions-get
+      parameters:
+      - in: query
+        name: page
+        description: 50 items are displayed per page
+      responses:
+        200:
+          description: OK
+      tags:
+      - View
+      - ""
+      - Transactionss
+    post:
+      summary: Create Transactions
+      description: Create transactions.
+      operationId: createTransaction
+      x-api-path-slug: apitransactions-post
+      parameters:
+      - in: body
+        name: body
+        description: Transaction to create
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      - Transactionss
